@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <script type="javascript">
+      function GetCookieData() {
+        var app = "ionicapp"; // Your Custom URL Scheme
+        var data = document.cookie; // Change to be whatever data you want to read
+        window.location = app + '://?data=' + encodeURIComponent(data); // Pass data to your app
+      }
+    </script>
+  </head>
+  <body onload="GetCookieData()">
+  </body>
+</html>
